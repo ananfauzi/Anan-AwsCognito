@@ -1,0 +1,27 @@
+{
+    "name": "Anan/AwsCognito",
+    "description": "Magento 2.4 package to manage Web and API authentication with AWS Cognito",
+    "keywords": ["Authentication", "SSO", "Single Sign On"],
+
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "aws/aws-sdk-php": "^3.209",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Anan\\AwsOAuth\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Anan Fauzi",
+            "email": "mr.ananfauzi@gmail.com"
+        }
+    ]
+}

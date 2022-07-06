@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Anan AwsCognito, Magento 2.4 package to manage Web and API authentication with AWS Cognito
+ * php version 8.1
+ * 
+ * @category Authentication
+ * @package  Aws Cognito
+ * @author   Anan Fauzi <mr.ananfauzi@gmail.com>
+ * @license  MIT license <https://opensource.org/licenses/MIT>
+ * @link     https://github.com/ananfauzi
+ */
+-->
+<default>
+    <anan_awscognito>
+        <general>
+            <version>latest</version>
+        </general>
+    </anan_awscognito>
+</default>

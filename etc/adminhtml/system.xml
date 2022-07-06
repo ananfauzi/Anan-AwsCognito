@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Anan AwsCognito, Magento 2.4 package to manage Web and API authentication with AWS Cognito
+ * php version 8.1
+ * 
+ * @category Authentication
+ * @package  Aws Cognito
+ * @author   Anan Fauzi <mr.ananfauzi@gmail.com>
+ * @license  MIT license <https://opensource.org/licenses/MIT>
+ * @link     https://github.com/ananfauzi
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="anan_awscognito" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>AwsCognito</label>
+            <tab>Anan Extensions</tab>
+            <resource>Anan_AwsCognito::config</resource>
+            <group id="credentials" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Credentials</label>
+                <field id="aws_key" translate="label" type="obscure" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>AWS Key</label>
+                </field>
+                <field id="aws_secret" translate="label" type="obscure" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>AWS Secret</label>
+                </field>
+            </group>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Client Settings</label>
+                <field id="region" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Region</label>
+                    <source_model>Anan\AwsCognito\Model\Config\Sources\Region</source_model>
+                </field>
+                <field id="version" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Version</label>
+                </field>
+                <field id="app_client_id" translate="label" type="obscure" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>App Client ID</label>
+                </field>
+                <field id="app_client_secret" translate="label" type="obscure" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>App Client Secret</label>
+                </field>
+                <field id="user_pool_id" translate="label" type="obscure" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>User Pool ID</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
